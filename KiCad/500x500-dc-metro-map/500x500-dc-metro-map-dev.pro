@@ -1,6 +1,6 @@
-update=12/1/2021 14:31:24
+update=12/2/2021 17:17:22
 version=1
-last_client=pcbnew
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=500x500-dc-metro-map.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -29,13 +29,12 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.254
-TrackWidth2=0.1778
-TrackWidth3=0.2032
-TrackWidth4=0.254
-TrackWidth5=1.905
-TrackWidth6=2.54
-TrackWidth7=3.81
-TrackWidth8=5.08
+TrackWidth2=0.2032
+TrackWidth3=0.254
+TrackWidth4=1.905
+TrackWidth5=2.54
+TrackWidth6=3.81
+TrackWidth7=5.08
 ViaDiameter1=0.8
 ViaDrill1=0.4
 ViaDiameter2=0.399796
