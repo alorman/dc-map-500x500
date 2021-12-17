@@ -1,0 +1,22 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Map
+#
+DEF Map M 0 40 Y Y 1 F N
+F0 "M" 0 0 50 H V C CNN
+F1 "Map" -150 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X GND 1 0 -100 100 R 50 50 1 1 I
+X +5VDC 2 0 -200 100 R 50 50 1 1 I
+X Orange_Line_In 3 0 -300 100 R 50 50 1 1 I
+X Yellow_Line_In 4 0 -400 100 R 50 50 1 1 I
+X Green_Line_In 5 0 -500 100 R 50 50 1 1 I
+X Blue_Line_In 6 0 -600 100 R 50 50 1 1 I
+X Red_Line_In 7 0 -700 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
