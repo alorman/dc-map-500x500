@@ -1,5 +1,5 @@
 (sym_lib_table
-  (lib (name ESP-backpack)(type Legacy)(uri "C:/Users/AlexLorman/OneDrive - ThayerMahan Inc/Attachments/DC Metro Map Project/dc-map-500x500/KiCad/Custom-Libraries/ESP-backpack.lib")(options "")(descr ""))
-  (lib (name VCNL4010-GS08)(type Legacy)(uri "C:/Users/AlexLorman/OneDrive - ThayerMahan Inc/Attachments/DC Metro Map Project/dc-map-500x500/KiCad/Custom-Libraries/VCNL4010-GS08.lib")(options "")(descr ""))
-  (lib (name 500x500-metro-map)(type Legacy)(uri ${KIPRJMOD}/500x500-metro-map.lib)(options "")(descr ""))
+  (lib (name VCNL4010-GS08)(type Legacy)(uri ${KIPRJMOD}/../500x500-dc-metro-map-custom-libraries/VCNL4010-GS08.lib)(options "")(descr ""))
+  (lib (name 500x500-metro-map)(type Legacy)(uri ${KIPRJMOD}/../500x500-dc-metro-map-custom-libraries/500x500-metro-map.lib)(options "")(descr ""))
+  (lib (name ESP-backpack)(type Legacy)(uri ${KIPRJMOD}/../500x500-dc-metro-map-custom-libraries/ESP-backpack.lib)(options "")(descr ""))
 )
