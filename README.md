@@ -29,7 +29,7 @@ This board requires the use of a backpack to operate. Currently the only develop
 | Silkscreen        | White          |
 | Copper Thickness  | 1 oz           |
 | Min Spacing       | 6/6mil         |
-| Min Hole Size     | 6mil           |
+| Min Hole Size     | 2mil           |
 | Via Process       | Tented         |
 | Surface Treatment | HASL-Lead Free |
 | Special Notes     | See below      |
@@ -40,13 +40,17 @@ This board is large, expensive and relies on pick-and-place assembly to get righ
 Since this board pushes the limits of most fab houses (just on size), it's worth reaching out to them by email to see if they can support. 
 
 I can confirm the following fab houses can build this board.
-- Elecrow
-- PCBWay
-- AllPCB
-- Seeed Studio
-- Bittele
-- OurPCB
-- PCBonline
+|               | Can Build Boards | Can Populate Boards |
+|---------------|------------------|---------------------|
+| Elecrow       | X                |                     |
+| AllPCB        | X                | X                   |
+| PCBWay        | X                | X                   |
+| PCBCart       | X                | X                   |
+| JLCpcb        |                  |                     |
+| Seeeed Studio | X                | X                   |
+| Bittele       | X                | X                   |
+| OurPCB        | X                | X                   |
+| PCBonline     | X                | X                   |
 
-Although their prices vary wildly.
+Although their prices vary wildly.	
 
