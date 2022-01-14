@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name 500x500-metro-map-custom-libraries)(type KiCad)(uri ${KIPRJMOD}/../_500x500-dc-metro-map-custom-libraries)(options "")(descr ""))
+  (lib (name sk6805-1515)(type KiCad)(uri C:/Users/AlexLorman/Documents/sk6805-1515-info/kicad_library/sk6805-1515.pretty)(options "")(descr ""))
 )
