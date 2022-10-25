@@ -54,3 +54,14 @@ I can confirm the following fab houses can build this board.
 
 Although their prices vary wildly.	
 
+## LED Position Notes
+| **ESP32 GPIO Number** | **Line Color** | **Number LEDs** |
+|:---------------------:|:--------------:|:---------------:|
+|          IO12         |   Diagnostic   |        1        |
+|          IO14         |     Orange     |       209       |
+|          IO27         |     Yellow     |       185       |
+|          IO26         |      Green     |       181       |
+|          IO25         |      Blue      |       298       |
+|          IO33         |       Red      |       267       |
+
+
