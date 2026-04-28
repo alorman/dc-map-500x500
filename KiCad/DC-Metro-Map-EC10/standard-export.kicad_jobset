@@ -1,0 +1,422 @@
+{
+  "jobs": [
+    {
+      "description": "Create Version Folder in Gerbers Tree",
+      "id": "f5bafb48-e9aa-4562-ab16-5162b42299a5",
+      "settings": {
+        "command": "cmd /C mkdir Outputs\\Gerbers\\Rev${REV}",
+        "description": "",
+        "ignore_exit_code": true,
+        "output_filename": "f5bafb48-e9aa-4562-ab16-5162b42299a5.log",
+        "record_output": false
+      },
+      "type": "special_execute"
+    },
+    {
+      "description": "",
+      "id": "235b5510-77ba-40ee-a333-bd542bf4f233",
+      "settings": {
+        "board_only": false,
+        "board_outlines_chaining_epsilon": 0.01,
+        "cut_vias_in_body": false,
+        "description": "",
+        "export_board_body": true,
+        "export_components": true,
+        "export_inner_copper": false,
+        "export_pads": false,
+        "export_silkscreen": false,
+        "export_soldermask": false,
+        "export_tracks": false,
+        "export_zones": false,
+        "fill_all_vias": false,
+        "format": "step",
+        "fuse_shapes": false,
+        "include_dnp": true,
+        "include_unspecified": true,
+        "occt_format": 0,
+        "optimize_step": true,
+        "output_filename": "Outputs/STEP/${PROJECTNAME}_Rev${REV}.step",
+        "overwrite": false,
+        "subst_models": true,
+        "use_defined_origin": false,
+        "use_drill_origin": false,
+        "use_grid_origin": false,
+        "use_pcb_center_origin": true,
+        "user_origin.x": 161.51,
+        "user_origin.y": 89.12,
+        "vrml_model_dir": "",
+        "vrml_relative_paths": false
+      },
+      "type": "pcb_export_3d"
+    },
+    {
+      "description": "",
+      "id": "78416001-1ef4-40a0-9f6e-d8667c8db578",
+      "settings": {
+        "black_and_white": true,
+        "check_zones": false,
+        "create_gerber_job_file": true,
+        "crossout_dnp_footprints_on_fab_layers": true,
+        "description": "",
+        "disable_aperture_macros": false,
+        "drawing_sheet": "",
+        "drill_shape": "full",
+        "hide_dnp_footprints_on_fab_layers": false,
+        "include_netlist_attributes": true,
+        "layers": [
+          "B.Cu",
+          "B.Mask",
+          "B.Paste",
+          "B.SilkS",
+          "In30.Cu",
+          "In29.Cu",
+          "In28.Cu",
+          "In27.Cu",
+          "In26.Cu",
+          "In25.Cu",
+          "In24.Cu",
+          "In23.Cu",
+          "In22.Cu",
+          "In21.Cu",
+          "In20.Cu",
+          "In19.Cu",
+          "In18.Cu",
+          "In17.Cu",
+          "In16.Cu",
+          "In15.Cu",
+          "In14.Cu",
+          "In13.Cu",
+          "In12.Cu",
+          "In11.Cu",
+          "In10.Cu",
+          "In9.Cu",
+          "In8.Cu",
+          "In7.Cu",
+          "In6.Cu",
+          "In5.Cu",
+          "In4.Cu",
+          "In3.Cu",
+          "In2.Cu",
+          "In1.Cu",
+          "F.Cu",
+          "F.Mask",
+          "F.Paste",
+          "F.SilkS",
+          "Edge.Cuts"
+        ],
+        "layers_to_include_on_all_layers": [],
+        "mirror": false,
+        "negative": false,
+        "output_filename": "",
+        "plot_drawing_sheet": false,
+        "plot_footprint_values": true,
+        "plot_pad_numbers": false,
+        "plot_ref_des": true,
+        "precision": 5,
+        "sketch_dnp_footprints_on_fab_layers": true,
+        "sketch_pads_on_fab_layers": false,
+        "subtract_solder_mask_from_silk": false,
+        "use_drill_origin": false,
+        "use_protel_file_extension": true,
+        "use_x2_format": true
+      },
+      "type": "pcb_export_gerbers"
+    },
+    {
+      "description": "",
+      "id": "9a40313d-1896-4260-adb7-7a64b307a28d",
+      "settings": {
+        "description": "",
+        "drill_origin": "abs",
+        "excellon.combine_pth_npth": true,
+        "excellon.minimal_header": false,
+        "excellon.mirror_y": false,
+        "excellon.oval_drill_route": false,
+        "format": "excellon",
+        "generate_map": false,
+        "generate_report": false,
+        "generate_tenting": false,
+        "gerber_precision": 5,
+        "map_format": "pdf",
+        "output_dir": "",
+        "report_filename": "",
+        "units": "in",
+        "zero_format": "decimal"
+      },
+      "type": "pcb_export_drill"
+    },
+    {
+      "description": "Export Schematic PDF",
+      "id": "c6a8b09d-07f3-456e-88fc-0ae6ea887da8",
+      "settings": {
+        "black_and_white": false,
+        "color_theme": "KiCad Classic",
+        "description": "",
+        "drawing_sheet": "",
+        "format": "pdf",
+        "min_pen_width": 847,
+        "output_filename": "untitled.pdf",
+        "page_size": "auto",
+        "pdf_hierarchical_links": true,
+        "pdf_metadata": true,
+        "pdf_property_popups": true,
+        "plot_all": true,
+        "plot_drawing_sheet": true,
+        "show_hop_over": false,
+        "use_background_color": true,
+        "variant_name": ""
+      },
+      "type": "sch_export_plot_pdf"
+    },
+    {
+      "description": "Generate iBOM",
+      "id": "b6ce1f86-4ff4-4730-b351-f2d5c14cbb20",
+      "settings": {
+        "command": "python \"${KICAD9_3RD_PARTY}/plugins/org_openscopeproject_InteractiveHtmlBom/generate_interactive_bom.py\" --dark-mode --layer-view F --include-tracks --name-format ${PROJECTNAME}-ibom --dest-dir Outputs\\iBOM --extra-data-file ${PROJECTNAME}.kicad_pcb ${PROJECTNAME}.kicad_pcb",
+        "description": "",
+        "ignore_exit_code": false,
+        "output_filename": "\\b6ce1f86-4ff4-4730-b351-f2d5c14cbb20.log",
+        "record_output": false
+      },
+      "type": "special_execute"
+    },
+    {
+      "description": "",
+      "id": "08fcd71d-c11d-4f9b-9227-7ba04851fac8",
+      "settings": {
+        "anti_alias": true,
+        "bg_style": "default",
+        "description": "",
+        "floor": false,
+        "format": "png",
+        "height": 1200,
+        "light_bottom_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light_camera_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light_side_elevation": 60,
+        "light_side_intensity": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "light_top_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "output_filename": "",
+        "pan_x": 0.0,
+        "pan_y": 0.0,
+        "pan_z": 0.0,
+        "perspective": false,
+        "pivot_x": 0.0,
+        "pivot_y": 0.0,
+        "pivot_z": 0.0,
+        "post_process": false,
+        "preset": "",
+        "procedural_textures": false,
+        "quality": "basic",
+        "rotation_x": -65.0,
+        "rotation_y": 0.0,
+        "rotation_z": 15.0,
+        "side": "top",
+        "use_board_stackup_colors": true,
+        "width": 1920,
+        "zoom": 1.0
+      },
+      "type": "pcb_render"
+    },
+    {
+      "description": "",
+      "id": "28aad278-1693-457e-bd71-baf3cbdf9c70",
+      "settings": {
+        "description": "",
+        "exclude_bom": false,
+        "exclude_dnp": true,
+        "exclude_footprints_with_th": false,
+        "format": "ascii",
+        "gerber_board_edge": true,
+        "negate_bottom_x": false,
+        "output_filename": "",
+        "side": "both",
+        "single_file": false,
+        "smd_only": false,
+        "units": "mm",
+        "use_drill_place_file_origin": true,
+        "variant": ""
+      },
+      "type": "pcb_export_pos"
+    },
+    {
+      "description": "Generate CSV bill of materials",
+      "id": "e046113f-700d-4986-af06-6ba2a79e5508",
+      "settings": {
+        "bom_format_preset_name": "",
+        "bom_preset_name": "",
+        "description": "",
+        "exclude_dnp": false,
+        "field_delimiter": "",
+        "fields_group_by": [],
+        "fields_labels": [
+          "Reference",
+          "Value",
+          "Footprint",
+          "Datasheet",
+          "Description",
+          "Qty",
+          "#",
+          "Sim.Device",
+          "Sim.Pins"
+        ],
+        "fields_ordered": [
+          "__Reference",
+          "__Value",
+          "__Footprint",
+          "__Datasheet",
+          "__Description",
+          "__${QUANTITY}",
+          "__${ITEM_NUMBER}",
+          "__Sim.Device",
+          "__Sim.Pins"
+        ],
+        "filter_string": "",
+        "group_symbols": true,
+        "keep_line_breaks": false,
+        "keep_tabs": false,
+        "output_filename": "${PROJECTNAME}.csv",
+        "ref_delimiter": "",
+        "ref_range_delimiter": "",
+        "sort_asc": true,
+        "sort_field": "Reference",
+        "string_delimiter": "",
+        "variant_names": []
+      },
+      "type": "sch_export_bom"
+    },
+    {
+      "description": "Generate Dimensions",
+      "id": "e5b20024-d721-469e-a886-2d4c8a8616ad",
+      "settings": {
+        "command": "C:\\PROGRA~1\\KiCad\\10.0\\bin\\python.exe scripts\\fab-outputs.py \"${PROJECTNAME}.kicad_pcb\" --out \"${JOBSET_OUTPUT_WORK_PATH}/README.md\" --img-dir \"Outputs/img\"",
+        "description": "",
+        "ignore_exit_code": false,
+        "output_filename": "\\",
+        "record_output": true
+      },
+      "type": "special_execute"
+    }
+  ],
+  "meta": {
+    "version": 1
+  },
+  "outputs": [
+    {
+      "description": "1 - Prep",
+      "id": "c1cce36f-2733-45a3-8efe-13f7dff07b1f",
+      "only": [
+        "f5bafb48-e9aa-4562-ab16-5162b42299a5"
+      ],
+      "settings": {
+        "output_path": "\\"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "2 - Schematic",
+      "id": "f386bd4d-e33b-4194-93f3-955cb58ad189",
+      "only": [
+        "c6a8b09d-07f3-456e-88fc-0ae6ea887da8"
+      ],
+      "settings": {
+        "output_path": "Outputs\\Schematic"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "3 - Gerbers",
+      "id": "84be4674-1a8b-4bb4-aa17-8f267c3a8370",
+      "only": [
+        "78416001-1ef4-40a0-9f6e-d8667c8db578",
+        "9a40313d-1896-4260-adb7-7a64b307a28d"
+      ],
+      "settings": {
+        "format": "zip",
+        "output_path": "${KIPRJMOD}\\Outputs\\Gerbers\\Rev${REV}\\Gerbers_${PROJECTNAME}_Rev${REV}.zip"
+      },
+      "type": "archive"
+    },
+    {
+      "description": "4 - IMG",
+      "id": "38c1b473-2274-4b0b-a07f-ff952b0336cf",
+      "only": [
+        "08fcd71d-c11d-4f9b-9227-7ba04851fac8"
+      ],
+      "settings": {
+        "output_path": "Outputs\\img"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "5 - iBOM",
+      "id": "2e16ac1e-60b8-4dc5-bc78-5cb9a2e218d6",
+      "only": [
+        "b6ce1f86-4ff4-4730-b351-f2d5c14cbb20"
+      ],
+      "settings": {
+        "output_path": "\\"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "6 - PNP Data",
+      "id": "08865530-5933-4d8b-89e4-ec05a474f1b0",
+      "only": [
+        "28aad278-1693-457e-bd71-baf3cbdf9c70"
+      ],
+      "settings": {
+        "output_path": "Outputs\\PNP"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "7 - CSV BOM",
+      "id": "9c639a27-46d6-4ae2-8a61-4797eb736ad0",
+      "only": [
+        "e046113f-700d-4986-af06-6ba2a79e5508"
+      ],
+      "settings": {
+        "output_path": "Outputs\\BOM"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "8 - STEP",
+      "id": "348aab02-6db4-47e4-b78e-1b039a3face4",
+      "only": [
+        "235b5510-77ba-40ee-a333-bd542bf4f233"
+      ],
+      "settings": {
+        "output_path": "${KIPRJMOD}"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "9 - Board Dimensions",
+      "id": "79ae955f-cf3e-4c02-9eb8-bbda6a4836a0",
+      "only": [
+        "e5b20024-d721-469e-a886-2d4c8a8616ad"
+      ],
+      "settings": {
+        "output_path": "\\"
+      },
+      "type": "folder"
+    }
+  ]
+}

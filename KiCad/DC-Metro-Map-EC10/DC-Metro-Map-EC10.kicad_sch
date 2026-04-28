@@ -1,0 +1,623 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "48a0e201-7888-48a8-8508-bb9b708ceb07")
+	(paper "A3")
+	(lib_symbols
+		(symbol "Device:R_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "${REV}"
+		(exclude_from_sim no)
+		(at 392.9167 280.4407 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4b90d617-6d22-42cb-b271-982c556d3734")
+	)
+	(junction
+		(at 203.2 219.964)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b302693b-35b0-48f8-aee8-46f42f5d14ac")
+	)
+	(wire
+		(pts
+			(xy 189.992 219.964) (xy 194.818 219.964)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65aa7723-50ba-4f01-8331-d1ad16c51626")
+	)
+	(wire
+		(pts
+			(xy 203.2 219.964) (xy 203.2 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87f7b184-91d8-4eb2-aaca-b875aff0b5a5")
+	)
+	(wire
+		(pts
+			(xy 203.2 234.696) (xy 203.2 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cca3702-7ee3-4eae-8b9d-b9323c347d8b")
+	)
+	(wire
+		(pts
+			(xy 208.026 219.964) (xy 203.2 219.964)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e873042-6c62-47c0-90e8-b8163a7aea66")
+	)
+	(wire
+		(pts
+			(xy 199.898 219.964) (xy 203.2 219.964)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2603559-240a-470f-b0cc-63ab56d406f8")
+	)
+	(global_label "3V3"
+		(shape input)
+		(at 189.992 219.964 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "78754c38-2063-41de-995c-1f5cbd4e0dd1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 183.4992 219.964 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 203.2 234.696 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8898ace7-fec5-4bb0-adac-94327bf435ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.2 241.5517 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "MCU-Read-In"
+		(shape input)
+		(at 208.026 219.964 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a51f35dd-afa5-47eb-a932-0ea5a85501b3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.6183 219.964 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 203.2 227.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31d30b7c-9d0b-43a9-94d2-82bfe9724347")
+		(property "Reference" "R2"
+			(at 205.74 226.0599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Small_US"
+			(at 205.74 228.5999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 203.2 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 203.2 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d5633c7-970f-461d-b5cb-26a273c214f7")
+		)
+		(pin "2"
+			(uuid "917f8421-cfb2-42cb-b665-6453c50079b9")
+		)
+		(instances
+			(project "DC-Metro-Map-EC10"
+				(path "/48a0e201-7888-48a8-8508-bb9b708ceb07"
+					(reference "R2")
+					(unit 1)
+					(variant
+						(name "Rev00")
+						(field
+							(name "Value")
+							(value "1k 0603")
+						)
+					)
+					(variant
+						(name "Rev01")
+						(field
+							(name "Value")
+							(value "2.2k 0603")
+						)
+					)
+					(variant
+						(name "Rev02")
+						(field
+							(name "Value")
+							(value "3.3k 0603")
+						)
+					)
+					(variant
+						(name "Rev03")
+						(field
+							(name "Value")
+							(value "4.7k 0603")
+						)
+					)
+					(variant
+						(name "Rev04")
+						(field
+							(name "Value")
+							(value "6.8k 0603")
+						)
+					)
+					(variant
+						(name "Rev05")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+					(variant
+						(name "Rev06")
+						(field
+							(name "Value")
+							(value "15k 0603")
+						)
+					)
+					(variant
+						(name "Rev07")
+						(field
+							(name "Value")
+							(value "22k 0603")
+						)
+					)
+					(variant
+						(name "Rev08")
+						(field
+							(name "Value")
+							(value "33k 0603")
+						)
+					)
+					(variant
+						(name "Rev09")
+						(field
+							(name "Value")
+							(value "47k 0603")
+						)
+					)
+					(variant
+						(name "Rev10")
+						(field
+							(name "Value")
+							(value "68k 0603")
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 197.358 219.964 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2d30a7b-ff60-4015-b2b0-acf10a498e76")
+		(property "Reference" "R1"
+			(at 197.358 214.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Small_US"
+			(at 197.358 217.17 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 197.358 219.964 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 197.358 219.964 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 197.358 219.964 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e312fb4-3936-40a8-8858-c96e60488c56")
+		)
+		(pin "2"
+			(uuid "1f74dbce-588b-431d-b570-39ae880ab899")
+		)
+		(instances
+			(project "DC-Metro-Map-EC10"
+				(path "/48a0e201-7888-48a8-8508-bb9b708ceb07"
+					(reference "R1")
+					(unit 1)
+					(variant
+						(name "Rev00")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+					(variant
+						(name "Rev01")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+					(variant
+						(name "Rev02")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+					(variant
+						(name "Rev03")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+					(variant
+						(name "Rev04")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+					(variant
+						(name "Rev05")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+					(variant
+						(name "Rev06")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+					(variant
+						(name "Rev07")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+					(variant
+						(name "Rev08")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+					(variant
+						(name "Rev09")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+					(variant
+						(name "Rev10")
+						(field
+							(name "Value")
+							(value "10k 0603")
+						)
+					)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
