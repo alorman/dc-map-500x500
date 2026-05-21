@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "_DC-Metro-Map-EC10_custom_footprints")(type "KiCad")(uri "${KIPRJMOD}/_DC-Metro-Map-EC10_custom_components/_DC-Metro-Map-EC10_custom_footprints.pretty")(options "")(descr ""))
-)
